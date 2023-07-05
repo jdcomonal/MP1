@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/94175543d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>PROFILE</title>
+    <script>
+        function toggleNav() {
+            var navList = document.getElementById("navList");
+            navList.classList.toggle("show");
+            // window.alert("hello");
+        }
+    </script>
+
+</head>
+
+<body>
+    <header id="home">
+        <div class="navbar">
+            <div class="iconlogo">
+                <a onclick="toggleNav()">
+                    <img class="" src="img/logo.png" alt="">
+                </a>
+            </div>
+
+            <ul id="navList">
+                <li><img class="logo" src="img/logo.png" alt=""></li>
+                <li><a href="index.html" active>HOME</a> </li>
+                <li><a href="browseRecipe.html">BROWSE</a> </li>
+                <li><a href="about.html">ABOUT</a> </li>
+                <li><a href="contact.html">CONTACT</a> </li>
+                <!-- <li><a href="login.html">LOGIN</a> </li> -->
+                <li class="profile-nav">
+                    <a id="active"><i class="fa-regular fa-user"></i> Hi, Jhonny !</a>
+                    <ul>
+                        <li><a href="savedrecipes.html"><i class="fa-regular fa-heart"></i> SAVED
+                                RECIPES</a></li>
+                        <li><a href="shoppinglist.html"><i class="fa-solid fa-list"></i> SHOPPING LIST</a></li>
+                        <li><a href="settings.html"><i class="fa-solid fa-gear"></i> SETTINGS</a></li>
+                        <li><a href="login.html"><i class="fa-solid fa-power-off"></i> LOGOUT</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <main class="center-row">
+        <div class="profile-subNav">
+            <ul>
+                <li><a href="savedrecipes.html"><i class="fa-regular fa-heart"></i> SAVED
+                        RECIPES</a></li>
+                <li id="profile-select"><a href="shoppinglist.html"><i class="fa-solid fa-list"></i> SHOPPING LIST</a></li>
+                <li  ><a href="settings.html"><i class="fa-solid fa-gear"></i> SETTINGS</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div>
+                    <div><h3><i class="fa-solid fa-list"></i> SHOPPING LIST</h3></div>
+                    <div class="addItem-Search"><input type="search" name="addItem" id="addItem" placeholder=" + Add Item"></div>
+                    <div class="shoplist-recipe">
+                        <div class="shoplist-recipe-title">
+                            <div><a href="details.html"><h4>Mini Pancakes</h4></a></div>
+                            <div><button ><i class="fa-solid fa-trash"></i></button></div>
+                        </div>
+                        <div class="shoplist-recipe-item">
+                            <div class="shoplist-recipe-item-detail">
+                                <div class="shoplist-img">
+                                    <img src="img/egg.png" alt="">
+                                </div>
+                                <div><p>Egg</p></div>
+                                <div> <input type="number" id="quantity" min="0" value="1"></div>
+                                <div><input type="text" id="autocomplete-input" list="unit-list" placeholder="Unit" value="Piece">
+                                    <datalist id="unit-list">
+                                        <!-- Volume Units: -->
+                                        <option value="Teaspoon">
+                                        <option value="Tablespoon">
+                                        <option value="Fluid Ounce">
+                                        <option value="Pint">
+                                        <option value="Quart">
+                                        <option value="Gallon">
+                                        <option value="Milliliter">
+                                        <option value="Liter">
+                                        <option value="Pint">
+                                            <!-- Weight Units: -->
+                                        <option value="Ounce ">
+                                        <option value="Pound ">
+                                        <option value="Gram ">
+                                        <option value="Kilogram ">
+                                            <!-- Count Units: -->
+                                        <option value="Each ">
+                                        <option value="Piece ">
+                                        <option value="Pinch ">
+                                        <option value="Dash ">
+                                        <option value="Smidgen ">
+                                            <!-- Other Units: -->
+                                        <option value="Slice ">
+                                        <option value="Whole ">
+                                        
+                                    </datalist> </div>
+                                
+                            </div>
+                            <div><button ><i class="fa-solid fa-x fa-lg"></i></button></div>
+
+                        </div>
+                        <div class="shoplist-recipe-item">
+                            <div class="shoplist-recipe-item-detail">
+                                <div class="shoplist-img">
+                                    <img src="img/oil.jpg" alt="">
+                                </div>
+                                <div><p>Oil</p></div>
+                                <div> <input type="number" id="quantity" placeholder="QTY" min="0" value="" pattern="Quantity"></div>
+                                <div><input type="text" id="autocomplete-input" list="unit-list" placeholder="Unit" value="">
+                                    <datalist id="unit-list">
+                                        <!-- Volume Units: -->
+                                        <option value="Teaspoon">
+                                        <option value="Tablespoon">
+                                        <option value="Fluid Ounce">
+                                        <option value="Pint">
+                                        <option value="Quart">
+                                        <option value="Gallon">
+                                        <option value="Milliliter">
+                                        <option value="Liter">
+                                        <option value="Pint">
+                                            <!-- Weight Units: -->
+                                        <option value="Ounce ">
+                                        <option value="Pound ">
+                                        <option value="Gram ">
+                                        <option value="Kilogram ">
+                                            <!-- Count Units: -->
+                                        <option value="Each ">
+                                        <option value="Piece ">
+                                        <option value="Pinch ">
+                                        <option value="Dash ">
+                                        <option value="Smidgen ">
+                                            <!-- Other Units: -->
+                                        <option value="Slice ">
+                                        <option value="Whole ">
+                                        
+                                    </datalist> </div>
+                                
+                            </div>
+                            <div><button ><i class="fa-solid fa-x fa-lg"></i></button></div>
+
+                        </div>
+                        <div class="shoplist-recipe-item">
+                            <div class="shoplist-recipe-item-detail">
+                                <div class="shoplist-img">
+                                    <img src="img/Self-Rising-Flour-1812-575x360.jpg" alt="">
+                                </div>
+                                <div><p>Flour</p></div>
+                                <div> <input type="number" id="quantity"  placeholder="QTY" min="0" value="150"></div>
+                                <div><input type="text" id="autocomplete-input" list="unit-list" placeholder="Unit" value="Kilogram">
+                                    <datalist id="unit-list">
+                                        <!-- Volume Units: -->
+                                        <option value="Teaspoon">
+                                        <option value="Tablespoon">
+                                        <option value="Fluid Ounce">
+                                        <option value="Pint">
+                                        <option value="Quart">
+                                        <option value="Gallon">
+                                        <option value="Milliliter">
+                                        <option value="Liter">
+                                        <option value="Pint">
+                                            <!-- Weight Units: -->
+                                        <option value="Ounce ">
+                                        <option value="Pound ">
+                                        <option value="Gram ">
+                                        <option value="Kilogram ">
+                                            <!-- Count Units: -->
+                                        <option value="Each ">
+                                        <option value="Piece ">
+                                        <option value="Pinch ">
+                                        <option value="Dash ">
+                                        <option value="Smidgen ">
+                                            <!-- Other Units: -->
+                                        <option value="Slice ">
+                                        <option value="Whole ">
+                                        
+                                    </datalist> </div>
+                                
+                            </div>
+                            <div><button ><i class="fa-solid fa-x fa-lg"></i></button></div>
+
+                        </div>
+                        <div class="shoplist-recipe-item">
+                            <div class="shoplist-recipe-item-detail">
+                                <div class="shoplist-img">
+                                    <img src="img/milkglass-silver-copy-300x300.png" alt="">
+                                </div>
+                                <div><p>Milk</p></div>
+                                <div> <input type="number" id="quantity"  placeholder="QTY" min="0" value="250"></div>
+                                <div><input type="text" id="autocomplete-input" list="unit-list" placeholder="Unit" value="Milliliter">
+                                    <datalist id="unit-list">
+                                        <!-- Volume Units: -->
+                                        <option value="Teaspoon">
+                                        <option value="Tablespoon">
+                                        <option value="Fluid Ounce">
+                                        <option value="Pint">
+                                        <option value="Quart">
+                                        <option value="Gallon">
+                                        <option value="Milliliter">
+                                        <option value="Liter">
+                                        <option value="Pint">
+                                            <!-- Weight Units: -->
+                                        <option value="Ounce ">
+                                        <option value="Pound ">
+                                        <option value="Gram ">
+                                        <option value="Kilogram ">
+                                            <!-- Count Units: -->
+                                        <option value="Each ">
+                                        <option value="Piece ">
+                                        <option value="Pinch ">
+                                        <option value="Dash ">
+                                        <option value="Smidgen ">
+                                            <!-- Other Units: -->
+                                        <option value="Slice ">
+                                        <option value="Whole ">
+                                        
+                                    </datalist> </div>
+                                
+                            </div>
+                            <div><button ><i class="fa-solid fa-x fa-lg"></i></button></div>
+
+                        </div>
+                        
+
+                    </div>
+              
+                
+            </div>
+        </div>
+
+
+    </main>
+    <section>
+        <div class="recommendation">
+            <div class="recipe-header">
+                <h2>You may also like</h2>
+            </div>
+            <div class="items">
+
+                <div class="item">
+                    <a href="#">
+                        <div class="img image-zoom">
+                            <img src="img/HE-BREAKFASTFrittata472x310.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>Breakfast frittata</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="img image-zoom">
+                            <img src="img/472x310-BaconSpinachSpaghetti.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>Bacon and spinach spaghetti</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="img image-zoom">
+                            <img src="img/472x310-FridgeRaidFeasts-16065-BaconTomatoMuffins.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>Bacon and tomato muffin</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="browseRecipe.html">Browse</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Signup</a>
+                <a href="#home">Back to Top</a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="footer-social">
+                <p>Follow us : </p>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="footer-text">© 2023 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+
+
+</html>

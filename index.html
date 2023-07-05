@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/94175543d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/fontawesome-free-6.4.0-web/css/all.css"> -->
+    <title>HOME</title>
+    <script>
+        function toggleNav() {
+            var navList = document.getElementById("navList");
+            navList.classList.toggle("show");
+            // window.alert("hello");
+        }
+    </script>
+</head>
+
+<body>
+    <header id="home">
+        <div class="navbar">
+            <div class="iconlogo">
+                <a onclick="toggleNav()">
+                    <img class="" src="img/logo.png" alt="">
+                </a>
+            </div>
+            
+            <ul id="navList">
+                <li><img class="logo" src="img/logo.png" alt=""></li>
+                <li><a id="active" href="index.html" >HOME</a> </li>
+                <li><a href="browseRecipe.html">BROWSE</a> </li>
+                <li><a href="about.html">ABOUT</a> </li>
+                <li><a href="contact.html">CONTACT</a> </li>
+                <li><a href="login.html">LOGIN</a> </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="heroTxt">
+                <div class="herodiv">
+                    <h1>Welcome to <br>Cook's Companion!</h1>
+                </div>
+                <div class="herodiv">
+                    <p>The ultimate destination for culinary inspiration. Whether you're a seasoned chef, an adventurous
+                        home cook, or just starting your culinary journey, we've got you covered. </p></span>
+                </div>
+                
+                <div class="herodiv">
+                    <h2>Join Now and Unleash <br>Your Inner Chef</h2>
+                </div>
+                <div class="herodiv">
+                    <a href="SignUp.html">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="recipe-header"><h2>Looking for Recipe?</h2></div>
+            <div class="finder">
+                <form  class="form" action="browseRecipe.html" method="post">
+                    <div class="ingredients">
+                        <h3><i class="fa-solid fa-cart-shopping"></i> Tell us what ingredients you need</h3>
+                        <p>We need a minimum of 3 ingredients to find you some recipes.</p>
+                        <div class="input_ingredient">
+                            
+                           <input id="ingredient" placeholder="Enter ingredient" type="text" autocomplete="off">
+                           <div><p>Popular ingredients:</p></div>
+                            <div class="recent">
+                                <input type="button" value="Garlic" class="button-with-plus">
+                                <input type="button" value="Potato">
+                                <input type="button" value="Onion">
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="list">
+                            <div class="listHeader">
+                                <h3><i class="fa-solid fa-list"></i> Your Ingredients :</h3>
+                            </div>
+                            <div class="listing">
+                                <input type="button" value="White Flour">
+                                <input type="button" value="Egg">
+                                <input type="button" value="Oil">
+                            </div>
+                    </div>
+                    <div ><input type="SUBMIT"></div>
+                </form>
+            </div>
+        </div>
+        <div class="recommendation">
+            <div class="recipe-header"><h2>You may also like</h2></div>
+            <div class="items">
+                <div class="item">
+                    <a href="#">
+                    <div class="img image-zoom">
+                        <img src="img/HE-BREAKFASTFrittata472x310.jpg" alt="">
+                    </div>
+                    <div><h4>Breakfast frittata</h4></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                    <div class="img image-zoom">
+                        <img src="img/472x310-BaconSpinachSpaghetti.jpg" alt="">
+                    </div>
+                    <div><h4>Bacon and spinach spaghetti</h4></div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                    <div class="img image-zoom">
+                        <img src="img/472x310-FridgeRaidFeasts-16065-BaconTomatoMuffins.jpg" alt="">
+                    </div>
+                    <div><h4>Bacon and tomato muffin</h4></div>
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="browseRecipe.html">Browse</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Signup</a>
+                <a href="#home">Back to Top</a>
+
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="footer-social">
+                <p>Follow us: </p>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="footer-text">© 2023 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

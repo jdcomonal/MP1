@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/94175543d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>PROFILE</title>
+    <script>
+        function toggleNav() {
+            var navList = document.getElementById("navList");
+            navList.classList.toggle("show");
+            // window.alert("hello");
+        }
+    </script>
+
+</head>
+
+<body>
+    <header id="home">
+        <div class="navbar">
+            <div class="iconlogo">
+                <a onclick="toggleNav()">
+                    <img class="" src="img/logo.png" alt="">
+                </a>
+            </div>
+
+            <ul id="navList">
+                <li><img class="logo" src="img/logo.png" alt=""></li>
+                <li><a href="index.html" active>HOME</a> </li>
+                <li><a href="browseRecipe.html">BROWSE</a> </li>
+                <li><a href="about.html">ABOUT</a> </li>
+                <li><a href="contact.html">CONTACT</a> </li>
+                <!-- <li><a href="login.html">LOGIN</a> </li> -->
+                <li class="profile-nav">
+                    <a id="active"><i class="fa-regular fa-user"></i> PROFILE</a>
+                    <ul>
+                        <li ><a href="savedrecipes.html"><i class="fa-regular fa-heart"></i> SAVED
+                                RECIPES</a></li>
+                        <li><a href="shoppinglist.html"><i class="fa-solid fa-list"></i> SHOPPING LIST</a></li>
+                        <li><a href="settings.html"><i class="fa-solid fa-gear"></i> SETTINGS</a></li>
+                        <li><a href="login.html"><i class="fa-solid fa-power-off"></i> LOGOUT</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <main class="center-row">
+        <div class="profile-subNav">
+            <ul>
+                <li id="profile-select"><a href="savedrecipes.html"><i class="fa-regular fa-heart"></i> SAVED
+                        RECIPES</a></li>
+                <li><a href="shoppinglist.html"><i class="fa-solid fa-list"></i> SHOPPING LIST</a></li>
+                <li><a href="settings.html"><i class="fa-solid fa-gear"></i> SETTINGS</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div>
+                <a href="details.html">
+                    <div class="item-result">
+                        <div class="item-img">
+                            <img src="img/Mini-pancakes-472x310-35a709a6-0031-463c-82d1-93416f6a7f0b-0-472x310.jpg"
+                                alt="">
+                        </div>
+                        <div class="item-details">
+                            <h4>Mini pancakes</h4>
+                            <p>Ingredients: <br>
+                                White flour, egg, milk, oil</p>
+
+                        </div>
+
+                    </div>
+                </a>
+                <div class="remove-btn">
+                    <a class="remove-btn" href="" onclick=""><i class="fa-solid fa-x"></i> Remove</a>
+                </div>
+                <hr>
+                <a href="details.html">
+                    <div class="item-result">
+                        <div class="item-img">
+                            <img src="img/472x310-Pub-style-Yorkshires-d36e0e34-6741-4caf-9e95-4c9a4a55dca0-0-472x310.jpg"
+                                alt="">
+                        </div>
+                        <div class="item-details">
+                            <h4>Pub-style Yorkshire puddings</h4>
+                            <p>Ingredients: <br>
+                                Fine saltwhite, flour, egg, milk, oil</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="remove-btn">
+                    <a class="remove-btn" href="" onclick=""><i class="fa-solid fa-x"></i> Remove</a>
+                </div>
+                <hr>
+                <a href="details.html">
+                    <div class="item-result">
+                        <div class="item-img">
+                            <img src="img/472x310-BananaBreadCookies-f5489b47-7fd7-488b-b3db-770803ed54f8-0-472x310 (1).jpg"
+                                alt="">
+                        </div>
+                        <div class="item-details">
+                            <h4>Banana bread cookies</h4>
+                            <p>Ingredients: <br>
+                                Oats, banana, honey, oil, white flour, egg, vanilla</p>
+
+                        </div>
+
+                    </div>
+                </a>
+                <div class="remove-btn">
+                    <a class="remove-btn" href="" onclick=""><i class="fa-solid fa-x"></i> Remove</a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+    <section>
+        <div class="recommendation">
+            <div class="recipe-header">
+                <h2>You may also like</h2>
+            </div>
+            <div class="items">
+
+                <div class="item">
+                    <a href="#">
+                        <div class="img image-zoom">
+                            <img src="img/HE-BREAKFASTFrittata472x310.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>Breakfast frittata</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="img image-zoom">
+                            <img src="img/472x310-BaconSpinachSpaghetti.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>Bacon and spinach spaghetti</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="img image-zoom">
+                            <img src="img/472x310-FridgeRaidFeasts-16065-BaconTomatoMuffins.jpg" alt="">
+                        </div>
+                        <div>
+                            <h3>Bacon and tomato muffin</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="browseRecipe.html">Browse</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Signup</a>
+                <a href="#home">Back to Top</a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="footer-social">
+                <p>Follow us : </p>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="footer-text">© 2023 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+
+
+</html>

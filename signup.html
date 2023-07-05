@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/94175543d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>SIGN UP</title>
+    <script>
+        function toggleNav() {
+            var navList = document.getElementById("navList");
+            navList.classList.toggle("show");
+            // window.alert("hello");
+        }
+    </script>
+</head>
+
+<body>
+    <header id="home">
+        <div class="navbar">
+            <div class="iconlogo">
+                <a onclick="toggleNav()">
+                    <img class="" src="img/logo.png" alt="">
+                </a>
+            </div>
+            
+            <ul id="navList">
+                <li><img class="logo" src="img/logo.png" alt=""></li>
+                <li><a href="index.html" active>HOME</a> </li>
+                <li><a href="browseRecipe.html">BROWSE</a> </li>
+                <li><a href="about.html">ABOUT</a> </li>
+                <li><a  href="contact.html">CONTACT</a> </li>
+                <li><a  href="login.html">LOGIN</a> </li>
+            </ul>
+        </div>
+    </header>
+    <main class="loginBG">
+        <div class=" contact ">
+          <div class="login">
+            <form action="">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                     <div>
+                        <label for="name">Full Name:*</label>
+                        <input type="text" id="name" name="name"placeholder="Enter Full Name" required>
+                     </div>
+                     <div>
+                        <label for="name">UserName:*</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Username" required>
+                     </div>
+                     <div>
+                        <label for="email">Email:*</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                     </div>
+                    <div>
+                        <label for="password">Password:*</label>
+                        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                    </div>
+                    
+                    <div class="agreement">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree"> I agree to the terms and conditions</label>
+                    </div>
+             <div class="sub-center">
+                <input  type="submit" value="Sign Up">
+             </div>
+                    
+            
+            
+                </fieldset>
+            </form>
+
+          </div>
+        </div>
+  
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="browseRecipe.html">Browse</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Signup</a>
+                <a href="#home">Back to Top</a>
+
+            </div>
+
+
+
+
+
+            <div class="footer-links">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="footer-social">
+                <p>Follow us : </p>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="footer-text">© 2023 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

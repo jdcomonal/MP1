@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/94175543d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>CONTACT US</title>
+    <script>
+        function toggleNav() {
+            var navList = document.getElementById("navList");
+            navList.classList.toggle("show");
+            // window.alert("hello");
+        }
+    </script>
+</head>
+
+<body>
+    <header id="home">
+        <div class="navbar">
+            <div class="iconlogo">
+                <a onclick="toggleNav()">
+                    <img class="" src="img/logo.png" alt="">
+                </a>
+            </div>
+            
+            <ul id="navList">
+                <li><img class="logo" src="img/logo.png" alt=""></li>
+                <li><a href="index.html" >HOME</a> </li>
+                <li><a  href="browseRecipe.html">BROWSE</a> </li>
+                <li><a href="about.html">ABOUT</a> </li>
+                <li><a id="active" href="contact.html">CONTACT</a> </li>
+                <li><a href="login.html">LOGIN</a> </li>
+            </ul>
+
+        </div>
+    </header>
+    <main>
+        <div class="contact">
+            <div class="div-column-center">
+                <div class="center-txt">
+                    <h1>Contact Us</h1>
+                    <p>
+                        We'd love to hear from you! If you have any questions, suggestions, or feedback, please feel
+                        free to reach out to us.
+                        Our dedicated support team is here to assist you.
+                    </p>
+                </div>
+                <div class="div-row">
+                    <form class="div-label" action="">
+                        <div>
+                            <label for="name">Name</label>
+                            <input id="name" type="text" placeholder="Enter your Name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="Enter your Email" required>
+                        </div>
+                        <div>
+                            <label for="msg">Message</label>
+                            <textarea name="" id="msg" cols="30" rows="5" placeholder="Enter your Message"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="getintouch">
+            <div class="bgWhite">
+                <div class="getintouch-txt">
+                    <h1>Collaborations and Partnerships</h1>
+                    <p>For collaboration opportunities or partnership inquiries, 
+                        please reach out to us using the contact information provided above. 
+                        We're always excited to explore new collaborations and work with like-minded individuals or organizations.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="browseRecipe.html">Browse</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Signup</a>
+                <a href="#home">Back to Top</a>
+
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="footer-social">
+                <p>Follow us : </p>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="footer-text">© 2023 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
